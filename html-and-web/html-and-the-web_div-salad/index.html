@@ -13,19 +13,19 @@ Let's fix this mess!
   </head>
   <!--someone forgot to wrap the content of our webpage with an HTML element,
 	which one was it again?-->
-  <div>
-    <div>
-      <div>Jane Doe</div>
+  <body>
+    <header>
+      <nav>Jane Doe</nav>
       <!--Which elements could be used to link to parts of the webpage,
 		which appear below?-->
-      <div id="nav">
+      <nav id="nav">
         <div>About Me</div>
         <div>Contact</div>
         <div>Skillset</div>
-      </div>
-    </div>
+      </nav>
+    </header>
     <!--Looks like the following part is the central content of our webpage.-->
-    <div>
+    <main>
       <div id="about-me">
         <div>About me</div>
         <div>
@@ -57,15 +57,15 @@ Let's fix this mess!
       <div id="skills">
         <div>Skillset</div>
         <!--This part could use some bulletpoint to be more structured-->
-        <div>
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
-          <div>React</div>
-          <div>Painting rainbows</div>
-          <div>Party</div>
-        </div>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Painting rainbows</li>
+          <li>Party</li>
+        </ul>
       </div>
-    </div>
-  </div>
+    </main>
+  </body>
 </html>
