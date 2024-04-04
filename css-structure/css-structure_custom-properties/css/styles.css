@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+:root {
+  --color-black-light: rgb(48 48 48);
+  --color-primary: rgb(130, 54, 255);
+  --color-white: rgb(255 255 255);
+  --text-letter-distance: 0.025em;
+  --highlight-border-rad: 4px;
+}
+
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
 body {
   margin: 0;
   font-family: system-ui;
@@ -11,25 +22,44 @@ body {
 }
 
 header {
+<<<<<<< HEAD
   background: rgb(48 48 48 / 100%);
+=======
+  background: var(--color-black-light);
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
 }
 
 h1 {
   text-align: center;
+<<<<<<< HEAD
   color: white;
   line-height: 1.4;
   margin: 0;
   letter-spacing: 0.025em;
+=======
+  color: var(--color-white);
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: var(--text-letter-distance);
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
   text-transform: uppercase;
   padding-block: 16px;
 }
 
 h2 {
+<<<<<<< HEAD
   letter-spacing: 0.025em;
 }
 
 strong {
   color: #8236ff;
+=======
+  letter-spacing: var(--text-letter-distance);
+}
+
+strong {
+  color: var(--color-primary);
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
 }
 
 section {
@@ -57,12 +87,21 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
+<<<<<<< HEAD
   background-color: #8236ffff;
   border-radius: 4px;
 }
 
 figcaption {
   color: rgb(255 255 255);
+=======
+  background-color: var(--color-primary);
+  border-radius: var(--highlight-border-rad);
+}
+
+figcaption {
+  color: var(--color-white);
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
 }
 
 nav {
@@ -75,18 +114,29 @@ a {
   display: inline-block;
   font-size: smaller;
   padding: 8px;
+<<<<<<< HEAD
   border-radius: 4px;
   background-color: hsl(263, 100%, 61%);
   color: #fff;
+=======
+  border-radius: var(--highlight-border-rad);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
 }
 
 a:hover,
 a:focus-visible {
+<<<<<<< HEAD
   background-color: rgb(48 48 48);
+=======
+  background-color: var(--color-black-light);
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
   text-decoration: none;
 }
 
 mark {
+<<<<<<< HEAD
   background-color: rgb(130, 54, 255);
   color: #ffffff;
   border-radius: 4px;
@@ -97,3 +147,15 @@ mark {
   background-color: #303030;
   color: #8236ff;
 }
+=======
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--highlight-border-rad);
+  letter-spacing: var(--text-letter-distance);
+}
+
+::selection {
+  background-color: var(--color-black-light);
+  color: var(--color-primary);
+}
+>>>>>>> ae5f1aedec258704f7f9fcde76114f8e6bdc3954
