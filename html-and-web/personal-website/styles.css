@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  background-color: black;
+  color: bisque;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #6d6bdf;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 1000px;
+  border-radius: 12px;
+}
