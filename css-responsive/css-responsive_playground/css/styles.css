@@ -61,8 +61,7 @@ h1 {
 
 .box--one {
   background-color: lightblue;
-
-  width: 100px;
+  width: 10%;
   height: 100px;
 }
 
@@ -70,12 +69,12 @@ h1 {
   background-color: lightgreen;
 
   width: 100px;
+  /* width: calc(30vw - 200px) */
   height: 100px;
 }
 
 .box--three {
   background-color: lightpink;
-
   width: 50px;
   height: 250px;
 }
@@ -93,4 +92,33 @@ h1 {
 
 .box--five img {
   width: 100%;
+}
+
+@media (min-width: 599px) {
+  .box--two {
+    width: 200px;
+  }
+  /* CSS rules that are only applied when the screen is at least 600px wide */
+}
+
+@media (min-width: 1199px) {
+  .box--two {
+    width: 400px;
+  }
+  /* CSS rules that are only applied when the screen is at least 600px wide */
+}
+
+@media (orientation: landscape) {
+  .box--three {
+    width: 250px;
+    height: 50px;
+  }
+  /* CSS rules that are only applied when the screen is in landscape orientation */
+}
+
+@media (prefers-color-scheme: dark) {
+  .box--four {
+    background-color: black;
+  }
+  /* CSS rules that are only applied when the user prefers a dark color scheme */
 }
