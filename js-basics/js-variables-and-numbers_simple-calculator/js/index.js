@@ -15,26 +15,38 @@ const moduloButton = document.querySelector('[data-js="modulo"]');
 
 addButton.addEventListener("click", () => {
   // 1. Add the two operands and store the result in a variable. Log the variable's value to the console.
+  const addition = operand1 + operand2;
+  console.log(addition);
 });
 
 subtractButton.addEventListener("click", () => {
   // 2. Subtract the two operands and store the result in a variable. Log the variable's value to the console.
+  const substraction = operand1 - operand2;
+  console.log(substraction);
 });
 
 multiplyButton.addEventListener("click", () => {
   // 3. Multiply the two operands and store the result in a variable. Log the variable's value to the console.
+  const multiplication = operand1 * operand2;
+  console.log(multiplication);
 });
 
 divideButton.addEventListener("click", () => {
   // 4. Divide the two operands and store the result in a variable. Log the variable's value to the console.
+  const divition = operand1 / operand2;
+  console.log(divition);
 });
 
 exponentButton.addEventListener("click", () => {
   // 5. Raise "operand1" to the value of "operand2" and store the result in a variable. Log the variable's value to the console.
+  const exponentOperation = operand1 ** operand2;
+  console.log(exponentOperation);
 });
 
 moduloButton.addEventListener("click", () => {
   // 6. Calculate the remainder when dividing "operand1" by "operand2" and store the result in a variable. Log the variable's value to the console.
+  const moduloOperation = operand1 % operand2;
+  console.log(moduloOperation);
 });
 
 /*
