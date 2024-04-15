@@ -43,9 +43,7 @@ function getVectorLength(x, y, z) {
 
 console.log(getVectorLength(1, 2, 3));
 
-const getVectorLengthArrow = (x, y, z) => {
-  return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
-};
+const getVectorLengthArrow = (x, y, z) => (x ** 2 + y ** 2 + z ** 2) ** 0.5;
 
 console.log(getVectorLengthArrow(1, 2, 3));
 
@@ -55,9 +53,7 @@ function cleanInput(string) {
 
 console.log(cleanInput("HELLO"));
 
-const cleanInputArrow = (string) => {
-  return string.toLowerCase().trim();
-};
+const cleanInputArrow = (string) => string.toLowerCase().trim();
 
 console.log(cleanInputArrow("HELLO"));
 
