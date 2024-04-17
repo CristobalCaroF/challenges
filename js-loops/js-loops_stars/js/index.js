@@ -7,6 +7,11 @@ function renderStars() {
   starContainer.innerHTML = "";
 
   //--v-- your code here --v--
+  for (i = 1; i <= 5; i++) {
+    const star = document.createElement("img");
+    star.setAttribute("src", "assets/star-empty.svg");
+    starContainer.append(star);
+  }
 
   //--^-- your code here --^--
 }
