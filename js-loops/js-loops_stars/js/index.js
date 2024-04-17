@@ -7,21 +7,22 @@ function renderStars(filledStars) {
   starContainer.innerHTML = "";
 
   //--v-- your code here --v--
-  countFilled = filledStars;
-  for (i = 1; i <= 5; i++) {
+  let countFilled = filledStars;
+  for (let i = 1; i <= 5; i++) {
+    const star = document.createElement("img");
     if (countFilled > 0) {
-      const star = document.createElement("img");
       star.setAttribute("src", "assets/star-filled.svg");
-      starContainer.append(star);
       countFilled--;
     } else {
-      const star = document.createElement("img");
       star.setAttribute("src", "assets/star-empty.svg");
-      starContainer.append(star);
     }
+    star.addEventListener("click", (e) => {
+      renderStars(i);
+    });
+    starContainer.append(star);
   }
 
   //--^-- your code here --^--
 }
 
-renderStars(3);
+renderStars(0);
