@@ -19,4 +19,11 @@ const programmingLanguages = [
 
 // --v-- write/change code here --v--
 
+for (const lenguages of programmingLanguages) {
+  // console.log(lenguages);
+  const li = document.createElement("li");
+  li.textContent = lenguages;
+  ol.append(li);
+}
+
 // --^-- write/change code here --^--
