@@ -23,13 +23,35 @@ const cards = [
   },
 ];
 
-const onlyCardWithIdTwo = null;
+const onlyCardWithIdTwo = cards.filter((card) => {
+  if (card.id === "2") {
+    // console.log(card);
+    return card;
+  }
+});
 
-const allCardsWith3Tags = null;
+const allCardsWith3Tags = cards.filter((card) => {
+  if (card.tags.length === 3) {
+    // console.log(card);
+    return card;
+  }
+});
 
-const allCardsThatAreNotBookmarked = null;
+const allCardsThatAreNotBookmarked = cards.filter((card) => {
+  if (!card.isBookmarked) {
+    // console.log(card);
+    return card;
+  }
+});
 
-const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
+  if (card.tags.find((element) => element === "HTML" || element === "js")) {
+    if (card.isBookmarked) {
+      // console.log(card);
+      return card;
+    }
+  }
+});
 
 export {
   onlyCardWithIdTwo,
