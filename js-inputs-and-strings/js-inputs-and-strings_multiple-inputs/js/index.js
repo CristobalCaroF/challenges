@@ -17,10 +17,14 @@ const button = document.querySelector("[data-js=button]");
 
 button.addEventListener("click", () => {
 
+  secondInput.value = firstInput.value.toUpperCase();
+
+
   const firstInputNewValue = secondInput.value;
   const secondInputNewValue = firstInput.value;
   firstInput.value = firstInputNewValue;
   secondInput.value = secondInputNewValue;
 
   secondInput.value = firstInput.value;
+
 });
