@@ -247,6 +247,79 @@ width, etc. */
 /* Replace this comment with your media query. */
 /* --- */
 
+@media screen and (min-width: 768px), (orientation: portrait) {
+  :root {
+    --header-brand: 2rem;
+    --header-brand-line-height: 3rem;
+
+    --header-text: 1rem;
+    --header-text-line-height: 1rem;
+
+    --regular-text: 0.9rem;
+    --regular-line-height: 0.8rem;
+  }
+
+  .main-section {
+    display: flex;
+  }
+
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card-section article,
+  .card-section p {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --gap: 20px;
+
+    --website-desktop-width: 60%;
+    --header-brand: 2rem;
+    --header-brand-line-height: 3rem;
+
+    --header-text: 1rem;
+    --header-text-line-height: 1rem;
+
+    --regular-text: 0.9rem;
+    --regular-line-height: 0.8rem;
+  }
+
+  body {
+    background-color: var(--forest-green);
+    width: var(--website-desktop-width);
+    margin: auto;
+  }
+
+  .main-header,
+  .navbar {
+    width: var(--website-desktop-width);
+  }
+
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .card-section article:first-child {
+    width: 100%;
+    height: 400px;
+    box-shadow: none;
+  }
+
+  .card-section article,
+  .card-section p {
+    width: 400px;
+  }
+}
+
 /* Media Query Desktop */
 /* --- */
 /* Replace this comment with your media query. */
