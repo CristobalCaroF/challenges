@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
 
   const [lights, setLights] = useState(initialLights);
 
-  console.log(lights);
+  // console.log(lights);
 
   function handleToggle(id) {
     setLights((prevLights) =>
@@ -26,16 +26,28 @@ export default function App({ Component, pageProps }) {
     );
   }
 
-  // let count = lights.map((light) => )
+  function AllLightsOn() {
+    setLights((lights) => lights.map((light) => ({ ...light, isOn: true })));
+  }
+
+  function AllLightsOff() {
+    setLights((lights) => lights.map((light) => ({ ...light, isOn: false })));
+  }
+
+  let count = lights.filter(({ isOn }) => isOn).length;
+
+  let isDimmed = count === 0 ? true : false;
 
   return (
-    <Layout>
+    <Layout isDimmed={isDimmed}>
       <GlobalStyle />
       <Component
         {...pageProps}
         lights={lights}
         onToggle={handleToggle}
         count={count}
+        AllLightsOn={AllLightsOn}
+        AllLightsOff={AllLightsOff}
       />
     </Layout>
   );
